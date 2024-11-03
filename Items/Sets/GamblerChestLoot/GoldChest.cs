@@ -13,7 +13,7 @@ namespace SpiritMod.Items.Sets.GamblerChestLoot
 		{
 			Item.width = 40;
 			Item.height = 40;
-			Item.value = Item.buyPrice(gold: 5);
+			Item.value = Item.buyPrice(gold: 10);
 			Item.rare = ItemRarityID.Orange;
 			Item.maxStack = Item.CommonMaxStack;
 			Item.autoReuse = true;

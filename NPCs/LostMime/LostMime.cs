@@ -38,7 +38,7 @@ public class LostMime : ModNPC
 		if (spawnInfo.PlayerSafe || spawnInfo.Player.ZoneJungle || spawnInfo.Player.ZoneSnow || spawnInfo.PlayerInTown)
 			return 0f;
 
-		return Main.hardMode ? SpawnCondition.Cavern.Chance * 0.008f : SpawnCondition.Cavern.Chance * 0.08f;
+		return Main.hardMode ? SpawnCondition.Cavern.Chance * 0.007f : SpawnCondition.Cavern.Chance * 0.07f;
 	}
 
 	public override void FindFrame(int frameHeight)

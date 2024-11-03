@@ -1,8 +1,10 @@
-﻿v1.5.0.25
-- Added a bunch of checks and additional conditions by Remnants dev Wombat, thanks!
-- Fixed Naturalists Workshop only needing a 2 tile anchor despite being 3 tiles wide
-- Made Soul Shred draw fullbright instead of 70% bright for some reason
-- Fixed Kelp generating on sloped tiles then breaking (lol)
-- Made Naturalist's Workshop not a "table" tile (only technically, it didn't count as a table for rooms anyways)
-- Made Gravestones not land on top of Naturalist's Workshops
-- Updated Chinese localization
+﻿v1.5.0.26
+- Switched around gen order for Spirit Micros, Sepulchre passes
+- Fixed issue that spammed Sunken Surfaces
+- Fixed Ziggurat structure silently softlocking the game with Remnants on
+- Embedded Ziggurat structure into the ground, making it less likely to hang off ledges
+- Improved Remnants compatibility (PLEASE let it work this time)
+- Slightly reduced Lost Mime spawn rate
+- Increased Platinum Lootbox price to 90g (from 50g)
+- Increased Gold Lootbox price to 10g (from 5g)
+- Made all Lootboxes explicitly friendly

@@ -24,7 +24,7 @@ public class SepulchureSystem : ModSystem
 
 	public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
 	{
-		int index = tasks.FindIndex(genpass => genpass.Name.Equals("Settle Liquids Again"));
+		int index = tasks.FindIndex(genpass => genpass.Name.Equals("Cave Walls"));
 
 		if (index == -1 || ModLoader.HasMod("Remnants"))
 			return;

@@ -930,9 +930,13 @@ public static class SpiritGenPasses
 			{0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0},
 		};
 
-		bool placed = false;
-		while (!placed)
+		int repeats = 0;
+
+		while (true)
 		{
+			if (++repeats > 300000)
+				break;
+
 			// Select a place in the first 6th of the world
 			int hideoutX = WorldGen.genRand.Next(Main.maxTilesX / 6, Main.maxTilesX / 6 * 5); // from 50 since there's a unaccessible area at the world's borders
 																					   // 50% of choosing the last 6th of the world
@@ -941,19 +945,15 @@ public static class SpiritGenPasses
 				hideoutX = Main.maxTilesX - hideoutX;
 			}
 
-			int hideoutY = 0;
-			// We go down until we hit a solid tile or go under the world's surface
-			while (!WorldGen.SolidTile(hideoutX, hideoutY) && hideoutY <= Main.worldSurface)
+			int hideoutY = (int)Main.worldSurface;
+
+			// We go up from surface until we hit an empty tile without a wall
+			while (WorldGen.SolidTile(hideoutX, hideoutY) || Main.tile[hideoutX, hideoutY].WallType != WallID.None)
 			{
-				hideoutY++;
+				hideoutY--;
 			}
 
-			// If we went under the world's surface, try again
-			if (hideoutY > Main.worldSurface)
-			{
-				continue;
-			}
-
+			// If we intersect another structure, retry
 			if (!GenVars.structures.CanPlace(new Rectangle(hideoutX, hideoutY, ZigguratShape.GetLength(0), ZigguratShape.GetLength(1))))
 			{
 				continue;
@@ -961,14 +961,14 @@ public static class SpiritGenPasses
 
 			Tile tile = Main.tile[hideoutX, hideoutY];
 			// If the type of the tile we are placing the hideout on doesn't match what we want, try again
-			if (tile.TileType != TileID.Sand && tile.TileType != TileID.Ebonsand && tile.TileType != TileID.Crimsand && tile.TileType != TileID.Sandstone)
+			if (tile.TileType is not TileID.Sand and not TileID.Ebonsand and not TileID.Crimsand and not TileID.Sandstone)
 			{
 				continue;
 			}
 
 			// place the hideout
 			PlaceZiggurat(hideoutX, hideoutY - 1, ZigguratShape, ZigguratWalls, ZigguratLoot);
-			placed = true;
+			break;
 		}
 	}
 

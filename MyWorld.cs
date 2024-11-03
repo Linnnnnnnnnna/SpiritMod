@@ -1216,9 +1216,10 @@ public class MyWorld : ModSystem
 	{
 		tasks.Insert(3, new PassLegacy("SpiritReset", ResetWorldInfo));
 
-		int Sunflowers = tasks.FindIndex(genpass => genpass.Name.Equals("Sunflowers"));
-		if (Sunflowers != -1) //Add only if Sunflowers pass exists
-			tasks.Insert(Sunflowers, new PassLegacy("SpiritMicros", SpiritGenPasses.MicrosPass));
+		int microPassIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Smooth World"));
+
+		if (microPassIndex != -1) //Add only if Sunflowers pass exists
+			tasks.Insert(microPassIndex, new PassLegacy("SpiritMicros", SpiritGenPasses.MicrosPass));
 
 		int FloatingHouses = tasks.FindIndex(genpass => genpass.Name.Equals("Floating Island Houses"));
 		if (FloatingHouses != -1) //Add only if FloatingHouses pass exists...

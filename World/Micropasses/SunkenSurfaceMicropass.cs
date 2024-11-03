@@ -29,6 +29,7 @@ internal class SunkenSurfaceMicropass : Micropass
 		progress.Message = Language.GetTextValue("Mods.SpiritMod.WorldGen.SinkingSurface");
 
 		float worldSize = Main.maxTilesX / 4200f;
+
 		for (int i = 0; i < 16 * worldSize; i++)
 		{
 			int x = WorldGen.genRand.Next(100, Main.maxTilesX - 100);
@@ -58,10 +59,8 @@ internal class SunkenSurfaceMicropass : Micropass
 			if (ValidTypes.Contains(tile.TileType))
 				BuildSunkenSurface(x, y);
 
-			continue;
-
 		retry:
-			i--;
+			continue;
 		}
 	}
 

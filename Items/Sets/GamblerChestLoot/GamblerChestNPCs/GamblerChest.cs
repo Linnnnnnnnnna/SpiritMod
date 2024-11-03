@@ -82,6 +82,8 @@ namespace SpiritMod.Items.Sets.GamblerChestLoot.GamblerChestNPCs
 			NPC.immortal = true;
 			NPC.noTileCollide = false;
 			NPC.dontCountMe = true;
+			NPC.damage = 0;
+			NPC.friendly = true;
 
 			Defaults();
 		}
