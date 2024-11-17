@@ -15,9 +15,9 @@ namespace SpiritMod.Tiles.Vanilla
 			if (!belowSurfaceLayer)
 				return;
 
-			if (WorldGen.genRand.NextBool(150) && !Framing.GetTileSafely(i, j).BottomSlope)
+			if (WorldGen.genRand.NextBool(Main.noTrapsWorld ? 120 : 1750) && !Framing.GetTileSafely(i, j).BottomSlope)
 			{
-				List<int> types = new List<int>(); //Pick a valid length based on the amount of space available
+				List<int> types = []; //Pick a valid length based on the amount of space available
 				int tilesBelow = EmptyTilesBelow(i, j);
 
 				if (tilesBelow >= 3)

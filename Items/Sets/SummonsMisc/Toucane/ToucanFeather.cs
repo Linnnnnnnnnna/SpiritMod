@@ -28,6 +28,7 @@ namespace SpiritMod.Items.Sets.SummonsMisc.Toucane
 			Projectile.timeLeft = maxtimeleft;
 			Projectile.extraUpdates = 1;
 			Projectile.alpha = 255;
+			Projectile.DamageType = DamageClass.Summon;
 		}
 
 		public override void AI()

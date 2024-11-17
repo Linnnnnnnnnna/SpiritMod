@@ -1,10 +1,5 @@
-﻿v1.5.0.26
-- Switched around gen order for Spirit Micros, Sepulchre passes
-- Fixed issue that spammed Sunken Surfaces
-- Fixed Ziggurat structure silently softlocking the game with Remnants on
-- Embedded Ziggurat structure into the ground, making it less likely to hang off ledges
-- Improved Remnants compatibility (PLEASE let it work this time)
-- Slightly reduced Lost Mime spawn rate
-- Increased Platinum Lootbox price to 90g (from 50g)
-- Increased Gold Lootbox price to 10g (from 5g)
-- Made all Lootboxes explicitly friendly
+﻿v1.5.0.27
+- Nerfed spawn rate for Unstable Icicles to the ground (from 1/120 per random tick to 1/1750 per random tick)...except for notraps worlds
+- Fixed Marble and Granite music config options being unused
+- Fix typo in Cacophonous Cries description
+- Fixed Toucane feather projectiles dealing melee damage
