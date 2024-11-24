@@ -1,5 +1,4 @@
-﻿v1.5.0.27
-- Nerfed spawn rate for Unstable Icicles to the ground (from 1/120 per random tick to 1/1750 per random tick)...except for notraps worlds
-- Fixed Marble and Granite music config options being unused
-- Fix typo in Cacophonous Cries description
-- Fixed Toucane feather projectiles dealing melee damage
+﻿v1.5.0.28
+- Fix Fargo's Mod.Call issue
+- Added safety check to Letter projectile (from Undead Warlock)
+- Increased light given off by Lantern Power Battery
