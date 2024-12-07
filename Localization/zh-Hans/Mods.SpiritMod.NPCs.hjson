@@ -38,7 +38,11 @@ AstralAmalgam: {
 }
 
 SpaceShield.DisplayName: 天体护盾
-AuroraStag.DisplayName: 极光雄鹿
+
+AuroraStag: {
+	DisplayName: 极光雄鹿
+	// Entry: A gourgeous stag known to frolic under the aurora's sky. Loves ice berries, scared by most other things. Especially people.
+}
 
 AutomataCreeper: {
 	DisplayName: 机工械蛛

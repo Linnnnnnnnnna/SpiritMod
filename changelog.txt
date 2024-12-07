@@ -1,4 +1,8 @@
-﻿v1.5.0.28
-- Fix Fargo's Mod.Call issue
-- Added safety check to Letter projectile (from Undead Warlock)
-- Increased light given off by Lantern Power Battery
+﻿v1.5.0.29
+- Improve performance in InfoDisplayModifications
+- Switch SlayTask ID set to a HashSet instead of an int[], should run quicker for lookup
+- Switch ItemSets.Fish set to a HashSet, same as above
+- Remove literally completely useless SepulchreWindowTwo tile, which is the same as SepulchreWindowOne but doesn't drop an item (??? what)
+- Stop harpies from spawning in water
+- Stopped the Aurora Stag from being hurt by players
+- Added Aurora Stag bestiary entry
