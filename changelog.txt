@@ -1,8 +1,5 @@
-﻿v1.5.0.30
-- Fix issues with Grouper and a Coconut projectile spawning gores on servers
-- Fixed Auroras using a non-existant local player to check stuff
-- Made Auroras have a 1/3 chance to spawn per night instead of 1/8 if the player (in singleplayer) / any player (in multiplayer) is in a snow biome
-- Replaced Main.projectile iteration with Main.ActiveProjectile
-- Fixed ElectricJellyfishOrbiter from killing dead projectiles
-- Made sure all MyPlayer projectiles are owned by the player, not by everything that runs the method
-- So much superfluous cleanup, let's call it microoptimization
+﻿v1.5.0.31
+- Fix dumb error in lifeform analyzer quest functionality
+- Fixed modded herbs not being able to use Axe of Regrowth
+- Significantly improve random tick placement of all Kelps in the Ocean, reduce spawn rate, sync in mp
+- Fixed Frost Legion music priority
