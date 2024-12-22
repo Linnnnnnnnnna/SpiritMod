@@ -35,7 +35,7 @@ public class InfoDisplayModifications : GlobalInfoDisplay
 
 			foreach (NPC npc in Main.ActiveNPCs) // Checks if any NPC fits any quest NPC - if there's more than one, take the rarer one
 			{
-				if (npc.CanBeChasedBy() && validTypes.Contains(npc.type) && (npc is null || npc.rarity > storedNPC.rarity))
+				if (npc.CanBeChasedBy() && validTypes.Contains(npc.type) && (storedNPC is null || npc.rarity > storedNPC.rarity))
 					storedNPC = npc;
 			}
 

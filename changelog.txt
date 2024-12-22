@@ -1,8 +1,5 @@
-﻿v1.5.0.29
-- Improve performance in InfoDisplayModifications
-- Switch SlayTask ID set to a HashSet instead of an int[], should run quicker for lookup
-- Switch ItemSets.Fish set to a HashSet, same as above
-- Remove literally completely useless SepulchreWindowTwo tile, which is the same as SepulchreWindowOne but doesn't drop an item (??? what)
-- Stop harpies from spawning in water
-- Stopped the Aurora Stag from being hurt by players
-- Added Aurora Stag bestiary entry
+﻿v1.5.0.31
+- Fix dumb error in lifeform analyzer quest functionality
+- Fixed modded herbs not being able to use Axe of Regrowth
+- Significantly improve random tick placement of all Kelps in the Ocean, reduce spawn rate, sync in mp
+- Fixed Frost Legion music priority
