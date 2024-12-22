@@ -41,7 +41,7 @@ SpaceShield.DisplayName: 天体护盾
 
 AuroraStag: {
 	DisplayName: 极光雄鹿
-	// Entry: A gourgeous stag known to frolic under the aurora's sky. Loves ice berries, scared by most other things. Especially people.
+	Entry: 一种华美的雄鹿，以喜欢在极光之下嬉戏而闻名。它喜爱冰莓，但害怕大多数其他事物，尤其是人类。
 }
 
 AutomataCreeper: {
